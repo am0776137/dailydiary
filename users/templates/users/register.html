@@ -1,0 +1,20 @@
+{% extends "diary/base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+
+<form method="POST" enctype="multipart/form-data">
+    
+    {% csrf_token %}
+    <fieldset>
+        {{ form|crispy }}
+    </fieldset>
+
+    <fieldset>
+        <button type="submit">Sign Up</button>
+    </fieldset>
+
+</form>
+{% endblock content %}
+
+
+
