@@ -2,7 +2,14 @@
 {% load crispy_forms_tags %}
 {% block content %}
 
-<form method="POST" enctype="multipart/form-data">
+<h1>
+    
+    {{ user.username }} <!-- user is django's buil-in user. it can be accessed directly here 
+    without sending it in context of the view-->
+
+</h1>
+
+<!-- <form method="POST" enctype="multipart/form-data">
     
     {% csrf_token %}
     <fieldset>
@@ -14,7 +21,7 @@
         <button type="submit">Update</button>
     </fieldset>
 
-</form>
+</form> -->
 {% endblock content %}
 
 

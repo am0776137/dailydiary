@@ -127,3 +127,4 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Overriding the default routing of the built-in login view on successful login
 LOGIN_REDIRECT_URL = 'diary-home'
+LOGIN_URL = 'login'
